@@ -1,7 +1,16 @@
 'use client';
 
 import React from 'react';
-import Modal from 'react-modal';
+import Modal, { Styles } from 'react-modal';
+
+// Type assertion to fix react-modal + React 18 compatibility issue
+const ModalComponent = Modal as unknown as React.FC<{
+    isOpen: boolean;
+    onRequestClose: () => void;
+    ariaHideApp: boolean;
+    style: Styles;
+    children: React.ReactNode;
+}>;
 
 interface Props {
     closeModal: () => void;
@@ -16,7 +25,7 @@ export const PopupModal = ({
     children,
     isMobile,
 }: Props) => {
-    let customStyles = {
+    const customStyles: Styles = {
         content: {
             width: !isMobile ? 'fit-content' : 'auto',
             maxHeight: isMobile ? '100%' : '600px',
@@ -42,24 +51,25 @@ export const PopupModal = ({
     };
 
     return (
-        <Modal
+        <ModalComponent
             isOpen={isShowing}
             onRequestClose={closeModal}
             ariaHideApp={false}
-            //@ts-ignore
             style={customStyles}
         >
-            {isMobile &&
-                <button
-                    onClick={closeModal}
-                    className={`absolute top-0 right-0 p-2 h-6 w-6 flex justify-center items-center rounded-sm border-none bg-[#8C8681]`}
-                >
-                    <p className="text-white">X</p>
-                </button>
-            }
-            <div className={`w-full ${isMobile ? 'h-[90%]' : 'h-full'}`}>
-                {children}
-            </div>
-        </Modal>
+            <>
+                {isMobile && (
+                    <button
+                        onClick={closeModal}
+                        className={`absolute top-0 right-0 p-2 h-6 w-6 flex justify-center items-center rounded-sm border-none bg-[#8C8681]`}
+                    >
+                        <p className="text-white">X</p>
+                    </button>
+                )}
+                <div className={`w-full ${isMobile ? 'h-[90%]' : 'h-full'}`}>
+                    {children}
+                </div>
+            </>
+        </ModalComponent>
     );
 };
