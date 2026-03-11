@@ -97,8 +97,8 @@ export const hobbyProjectData: IProject[] = [
 export const enterpriseProjectData: IProject[] = [
     {
         name: 'Netcoins Web App',
-        links: ['https://netcoins.app'],
-        linkTexts: ['netcoins.app'],
+        links: ['http://netcoins.com', 'https://netcoins.app'],
+        linkTexts: ['Marketing Site', 'Web App'],
         desc: 'A Canadian centralized exchange for trading cryptocurrencies.',
         video: 'videos/netcoins.mp4',
         thumb: 'images/netcoins-thumbnail.png',
