@@ -42,6 +42,7 @@ export default function ProjectSide({ project }: Props) {
                                             {linkTexts[i]}
                                         </p>
                                     </div>
+                                    <div style={{ width: 20, height: 20 }} />
                                 </a>
                             </div>
                         ))}

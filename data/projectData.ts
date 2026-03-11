@@ -30,25 +30,34 @@ export const opensourceData: IProject[] = [
             'GraphQL',
             'Node.js',
         ],
-        contributions: [
-            'https://github.com/GaloyMoney/galoy-mobile',
-        ]
+        contributions: ['https://github.com/GaloyMoney/galoy-mobile'],
     },
 ];
 
 export const hobbyProjectData: IProject[] = [
     {
-        name: 'Piecework-BTC',
-        github: 'https://github.com/MaxwellDG/piecework-btc',
-        links: ['https://piecework-btc.com'],
-        linkTexts: ['Piecework-BTC'],
-        desc: 'Piecework-BTC is a tool to help connect employers with freelancers in the world of software development. What makes it different is it has less overhead, and less fluff. It takes no fees, and only gathers minimal information. All that matters is connecting one entity with another to complete a certain task.',
-        image: 'images/piecework-btc.png',
-        mobileImage: 'images/piecework-btc-mobile.png',
-        thumb: 'images/piecework-btc.png',
-        languages: ['Typescript'],
-        tech: ['Node.js', 'React', 'Next', 'Mongo', 'Google Cloud', 'Tailwind'],
+        name: 'Inventory',
+        github: 'https://github.com/MaxwellDG/inventory_tracking',
+        desc: 'Friends and family have started their own small businesses. I made this app to give them a cheap tool for tracking their inventory and orders.',
+        image: 'images/inventory-tracking.jpeg',
+        thumb: 'images/inventory-tracking.jpeg',
+        languages: ['Typescript', 'PHP'],
+        links: ['https://github.com/MaxwellDG/api_inventory_tracking'],
+        linkTexts: ['API Repo'],
+        tech: ['React Native', 'Expo', 'Laravel', 'Postgres'],
     },
+    // {
+    //     name: 'Piecework-BTC',
+    //     github: 'https://github.com/MaxwellDG/piecework-btc',
+    //     links: ['https://piecework-btc.com'],
+    //     linkTexts: ['Piecework-BTC'],
+    //     desc: 'Piecework-BTC is a tool to help connect employers with freelancers in the world of software development. What makes it different is it has less overhead, and less fluff. It takes no fees, and only gathers minimal information. All that matters is connecting one entity with another to complete a certain task.',
+    //     image: 'images/piecework-btc.png',
+    //     mobileImage: 'images/piecework-btc-mobile.png',
+    //     thumb: 'images/piecework-btc.png',
+    //     languages: ['Typescript'],
+    //     tech: ['Node.js', 'React', 'Next', 'Mongo', 'Google Cloud', 'Tailwind'],
+    // },
     // {
     //     name: "Duel Arena",
     //     github: "https://github.com/MaxwellDG/duel_arena",

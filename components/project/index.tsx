@@ -34,8 +34,7 @@ export default function Project({ project, isMobile }: Props) {
 
     return (
         <div
-            className="flex flex-col lg:flex-row max-w-2xl relative overflow-y-auto"
-            style={{ maxHeight: '28rem' }}
+            className="flex flex-col lg:flex-row max-w-2xl relative overflow-y-auto max-h-[44rem] lg:max-h-[28rem]"
         >
             <Multimedia
                 hasVideo={!!video}
