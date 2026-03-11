@@ -11,7 +11,6 @@ type Props = {
 };
 
 export default function DownloadIcon({ size }: Props) {
-
     const [isHovering, toggleHover] = React.useState(false);
 
     return (
@@ -26,7 +25,7 @@ export default function DownloadIcon({ size }: Props) {
             >
                 <a
                     className="items-center justify-center flex flex-row"
-                    href={'/images/Maxwell_2023.pdf'}
+                    href={'/images/Maxwell_2026.pdf'}
                     download
                 >
                     <Download

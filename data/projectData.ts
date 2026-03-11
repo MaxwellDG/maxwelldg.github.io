@@ -91,9 +91,9 @@ export const enterpriseProjectData: IProject[] = [
         links: ['https://netcoins.app'],
         linkTexts: ['netcoins.app'],
         desc: 'A Canadian centralized exchange for trading cryptocurrencies.',
-        video: '',
+        video: 'videos/netcoins.mp4',
+        thumb: 'images/netcoins-thumbnail.png',
         languages: ['Typescript', 'PHP'],
-        thumb: '',
         tech: [
             'React',
             'Vue',
@@ -104,7 +104,7 @@ export const enterpriseProjectData: IProject[] = [
             'Chakra',
             'Redis',
             'Storybook',
-            'Vite'
+            'Vite',
         ],
     },
     {
@@ -112,16 +112,10 @@ export const enterpriseProjectData: IProject[] = [
         links: ['https://www.netcoins.com/netcoins-app'],
         linkTexts: ['netcoins.com'],
         desc: 'A Canadian centralized exchange for trading cryptocurrencies.',
-        video: '',
+        video: 'videos/netcoins-mobile.mp4',
         languages: ['Typescript'],
-        thumb: '',
-        tech: [
-            'React Native',
-            'Expo',
-            'Redux',
-            'Sentry',
-            'Storybook'
-        ],
+        thumb: 'images/netcoins-mobile-thumb.jpeg',
+        tech: ['React Native', 'Redux', 'Sentry', 'Storybook'],
     },
     {
         name: "The Bard's Quill",

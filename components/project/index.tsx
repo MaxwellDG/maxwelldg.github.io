@@ -33,7 +33,10 @@ export default function Project({ project, isMobile }: Props) {
     } = project;
 
     return (
-        <div className="flex flex-col lg:flex-row max-w-2xl relative overflow-y-auto">
+        <div
+            className="flex flex-col lg:flex-row max-w-2xl relative overflow-y-auto"
+            style={{ maxHeight: '28rem' }}
+        >
             <Multimedia
                 hasVideo={!!video}
                 hasExtraContent={!!video || !!image}
@@ -69,7 +72,7 @@ export default function Project({ project, isMobile }: Props) {
                     </span>
                 ))}
             </div>
-            <div className="mx-2 flex flex-col">
+            <div className="mx-2 flex flex-1 flex-col">
                 <h3
                     style={{ border: '2px outset rgba(0,0,0,0.3)' }}
                     className="projectHeader mb-2 p-2 bg-transparentContainer self-center lg:self-start"
@@ -117,7 +120,11 @@ export default function Project({ project, isMobile }: Props) {
                                         />
                                     </a>
                                 </div>
-                                <a href={contribution} target="_blank" className="text-link group-hover:text-linkHover break-all">
+                                <a
+                                    href={contribution}
+                                    target="_blank"
+                                    className="text-link group-hover:text-linkHover break-all"
+                                >
                                     {contribution}
                                 </a>
                             </div>

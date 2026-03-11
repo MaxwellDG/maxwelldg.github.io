@@ -11,7 +11,6 @@ type Props = {
 };
 
 export default function FullscreenIcon({ size }: Props) {
-
     const [isHovering, toggleHover] = React.useState(false);
 
     return (
@@ -25,7 +24,7 @@ export default function FullscreenIcon({ size }: Props) {
                 onMouseOut={() => toggleHover(false)}
             >
                 <a
-                    href={'images/Maxwell_2023.pdf'}
+                    href={'images/Maxwell_2026.pdf'}
                     target="_blank"
                     rel="noopener noreferrer"
                 >

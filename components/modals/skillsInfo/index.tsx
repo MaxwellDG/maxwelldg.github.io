@@ -28,7 +28,7 @@ export const PopupModal = ({
     const customStyles: Styles = {
         content: {
             width: !isMobile ? 'fit-content' : 'auto',
-            maxHeight: isMobile ? '100%' : '600px',
+            maxHeight: isMobile ? '100%' : '90vh',
             display: 'flex',
             flexDirection: 'column',
             justifyContent: 'center',
@@ -38,6 +38,7 @@ export const PopupModal = ({
             backgroundColor: 'transparent',
             border: 'none',
             padding: 0,
+            overflow: 'visible',
             inset: isMobile ? '16px' : 0,
             margin: 'auto',
         },

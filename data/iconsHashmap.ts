@@ -33,7 +33,7 @@ export default {
     Solidity: 'solidity.png',
     'Web3.js': 'web3js.png',
     Chainlink: 'chainlink.png',
-    Truffle: 'truffle.png',
+    Hardhat: "hardhat.png",
     Remix: 'remix.png',
     Agile: 'agile.png',
     Scrum: 'scrum.png',

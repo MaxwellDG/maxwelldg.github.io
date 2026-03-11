@@ -50,7 +50,7 @@ export default [
             'Solidity',
             'Chainlink',
             'Web3.js',
-            'Truffle',
+            'Hardhat',
             'Remix',
         ],
     },

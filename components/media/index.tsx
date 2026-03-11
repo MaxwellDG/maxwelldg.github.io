@@ -13,7 +13,7 @@ export default ({ thumb, hasVideo, expandMedia, hasExtraContent }: Props) => {
     return (
         <div
             style={{ border: '2px outset rgba(0,0,0,0.3)' }}
-            className={`flex items-center self-center lg:self-auto p-2 bg-transparentContainer ${
+            className={`flex flex-2 items-center self-center lg:self-auto p-2 bg-transparentContainer ${
                 hasExtraContent
                     ? 'cursor-pointer hover:bg-[rgba(174,170,172,0.1)]'
                     : ''
@@ -21,7 +21,7 @@ export default ({ thumb, hasVideo, expandMedia, hasExtraContent }: Props) => {
         >
             <button
                 onClick={hasExtraContent ? expandMedia : undefined}
-                className={`flex justify-center items-center relative rounded lg:p-2 my-1 bg-transparent max-h-[200px] w-[200px] xxs:max-h-[250px] xxs:max-w-[250px] lg:w-[400px] ${
+                className={`flex justify-center items-center relative rounded lg:p-2 my-1 bg-transparent ${
                     !hasExtraContent ? 'cursor-default' : ''
                 }`}
             >
@@ -66,7 +66,7 @@ export default ({ thumb, hasVideo, expandMedia, hasExtraContent }: Props) => {
                     key={thumb}
                     src={thumb}
                     alt="img_project"
-                    className="max-w-full max-h-full"
+                    style={{ maxHeight: '300px', maxWidth: '100%', objectFit: 'contain' }}
                 />
             </button>
         </div>

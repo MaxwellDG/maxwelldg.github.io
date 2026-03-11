@@ -10,7 +10,7 @@ export default function MediaContent({ image, video }: Props) {
     return video ? (
         <video
             key={video}
-            style={{ height: '100%', width: '100%' }}
+            style={{ maxHeight: '85vh', maxWidth: '90vw', width: '100%', objectFit: 'contain' }}
             typeof="video/mp4"
             controls
             autoPlay
