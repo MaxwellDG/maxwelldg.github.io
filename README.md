@@ -1,3 +1,3 @@
 # Portfolio
 
-[https://www.maxwellmdg.dev](https://www.maxwellmdg.dev)
+[https://www.maxwelldg.github.io](https://www.maxwelldg.github.io)
